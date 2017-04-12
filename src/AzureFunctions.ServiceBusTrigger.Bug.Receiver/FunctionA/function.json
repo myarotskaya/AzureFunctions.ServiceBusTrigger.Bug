@@ -1,0 +1,15 @@
+﻿{
+  "disabled": false,
+  "scriptFile": "..\\bin\\AzureFunctions.ServiceBusTrigger.Bug.Receiver.dll",
+  "entryPoint": "AzureFunctions.ServiceBusTrigger.Bug.Receiver.FunctionA.Runner.Run",
+  "bindings": [
+    {
+      "name": "message",
+      "type": "serviceBusTrigger",
+      "direction": "in",
+      "queueName": "queue-function-a",
+      "connection": "ServiceBus",
+      "accessRights": "manage"
+    }
+  ]
+}

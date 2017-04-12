@@ -1,0 +1,20 @@
+﻿{
+  "disabled": false,
+  "scriptFile": "..\\bin\\AzureFunctions.ServiceBusTrigger.Bug.Sender.dll",
+  "entryPoint": "AzureFunctions.ServiceBusTrigger.Bug.Sender.FunctionA.Runner.Run",
+  "bindings": [
+    {
+      "name": "input",
+      "type": "manualTrigger",
+      "direction": "in"
+    },
+    {
+      "name": "outputQueue",
+      "type": "serviceBus",
+      "direction": "out",
+      "queueName": "queue-function-a",
+      "connection": "ServiceBus",
+      "accessRights": "manage"
+    }
+  ]
+}
